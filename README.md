@@ -49,7 +49,6 @@ what is component composition : when we keen one or more component inside anothe
  
 <!-- const Title =() =>(
   <h1 id="idd">
-    
     This function which ingect from functionl component:
     </h1>
 );
