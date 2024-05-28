@@ -1,22 +1,68 @@
-const parent =React.createElement("div", {id:"parent"},
-[React.createElement("div" ,{id:"child"}
-,[React.createElement("h1",{id:"h1tag"}
-,"I am h1 tag"),React.createElement("h2",{id:"h2tal"}
-,"I am h2 tag")]
+import React from "react";
+import ReactDOM from "react-dom/client";
+import foodlog from "./static/foodlogo.png";
+import food from "./dist/NamastyReact.3464ddca"
 
-),React.createElement("div" ,{id:"child2"}
-,[React.createElement("h1",{id:"h1tag2"}
-,"I am h1 tag"),React.createElement("h2",{id:"h2tal2"}
-,"I am h2 tag")]
 
-)]
+    /** 
+    headed
+    *-logo
+    *- nav-items
+    */
+    //body ,search restorentContainer img name of resto rating cuisines
 
-);
+    //footer
 
-console.log(parent);
 
-// const heading=React.createElement("h1",
-// {id:"hid", class:"myclass"},
-// "Hello form react insted it.");
-// const root =ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+const Headed= ()=> {
+  return (
+    <div className="header">
+      <div className="logo-container">
+      <img className="logo" src={foodlog} alt="Food Logo"/>
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+         
+        </ul>
+      </div>
+    </div>
+  )
+}
+const styleCard ={
+  backgroundColor:"#f0f0f0",
+};
+const Restocard =() =>{
+  return (
+    <div className="res-card" style={styleCard}>
+    <h3>Meghna Foods</h3>
+    </div>
+  );
+}
+
+ const Body =() =>{
+   return (
+     <div className="Body">
+       <div className="search">Search</div>
+       <div className="res-container">
+         <Restocard/>
+       </div>
+     </div>
+   );
+ }
+
+const AppLayout =() => {
+  return (
+    <div className="app">
+      <Headed/>
+      <Body/>
+    </div>
+
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout/>);

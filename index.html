@@ -10,11 +10,12 @@
 </head>
 <body>
     <div id ="root">
-        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <h1>Not Render from React Js</h1>
+    </div>
+        <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+            we are removing react and react.dom cdn because we have installed these under node_modules it using cdn is not preferable.
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
 
-<script src="./App.js">
-  
-</script>
-    </body>
+<script type="module" src="./App.js"></script>
+ </body>
 </html>
