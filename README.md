@@ -36,6 +36,36 @@
     which helps us to track state in components and updates the user interface when the state changes.
 </p>
 
+```
+import { useState } from "react";
+
+function App() {
+
+  // useState hook to create a state variable 'car' and a function 'setCar' to update it
+  const [car, setCar] = useState({
+    brand: 'BMW',
+    series: 'Q4'
+  });
+  
+  // Function to change the car's series
+  const changeSeries = () => {
+    setCar((prev) => {
+      return { ...prev, series: 'Q25',brand:'Audi' };
+    });
+  };
+
+  return (
+    <div>
+        <h4>My {car.brand}</h4>
+        <h4>{car.brand} {car.series}</h4>
+        <button onClick={changeSeries}>Change Series</button>
+    </div>
+  );
+}
+
+export default App;
+
+```
 
 # MyReactJsProject
 What is a bundler in React?
