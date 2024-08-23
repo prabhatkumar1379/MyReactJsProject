@@ -30,6 +30,11 @@
     Additionally, we can build our own custom Hooks as well.
 </p>
 
+<h3>useState Hook</h3>
+<p>
+    <code>useState</code> is a React hook that creates a "state variable," 
+    which helps us to track state in components and updates the user interface when the state changes.
+</p>
 
 
 # MyReactJsProject
