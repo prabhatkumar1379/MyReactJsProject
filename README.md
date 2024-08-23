@@ -1,3 +1,37 @@
+#React Hooks
+
+<h3>What is Hooks?</h3>
+<p>
+    Hooks are special functions that allow us to use state and other React features in functional components.
+</p>
+<p><strong>Note:</strong> Earlier, when we used to create React apps using functional components, we didn't have access to state management and lifecycle methods. To access these features, we had to add class components. This was the problem with functional components. However, after introducing React Hooks from version 16.8, we can now use state management and other React features without writing class components.</p>
+<p><strong>Note:</strong> In other words, Hooks are functions that make functional components work like class components.</p>
+<p>
+    Hooks made React functional components easy to use. That's why developers prefer functional components over class components.
+</p>
+
+<h4>Benefits of React Hooks</h4>
+<p>
+    React Hooks simplify the code, improve readability, reusability, and the overall performance of the application.
+</p>
+
+<p>There are some commonly used Hooks:</p>
+<ul>
+    <li>useState</li>
+    <li>useEffect</li>
+    <li>useRef</li>
+    <li>useMemo</li>
+    <li>useCallback</li>
+    <li>useContext</li>
+    <li>useReducer</li>
+    <li>useLayoutEffect</li>
+</ul>
+<p>
+    Additionally, we can build our own custom Hooks as well.
+</p>
+
+
+
 # MyReactJsProject
 What is a bundler in React?
 A bundler in React is a tool that allows developers to package their code into a single file or bundle. This bundle can then be used to run the application in the browser.
